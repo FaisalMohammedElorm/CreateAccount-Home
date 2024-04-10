@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
 import { AntDesign } from '@expo/vector-icons';
 import { TouchableOpacity } from 'react-native';
-const WelcomeScreen = () => {
+const WelcomeScreen = ({navigation}) => {
   const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (text) => {
@@ -64,7 +64,8 @@ const WelcomeScreen = () => {
     </View>
       <View style={{marginTop:200, marginRight:20}}>
       {/**Button Section */}
-      <TouchableOpacity
+      <TouchableOpacity 
+      onPress={() => navigation.navigate("Verification")}
         style={{
           position: "absolute",
           bottom: 60,
