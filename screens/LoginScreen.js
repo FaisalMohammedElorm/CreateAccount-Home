@@ -15,7 +15,13 @@ const LoginScreen = ({navigation}) => {
  
   return (
     <View style={{ marginLeft:20}}>
-    <View style={{marginTop:78}} ><Ionicons name="arrow-back-sharp" size={45} color="black" /></View>
+    <TouchableOpacity onPress={() => navigation.goBack()}>
+    <View> 
+    <View style={{marginTop:60}} ><Ionicons name="arrow-back-sharp" size={45} color="black" />
+     </View>
+     </View>
+    </TouchableOpacity>
+   
 
     <View style={{marginLeft:20}}>
     <Text style={{fontSize:35, marginTop:30  }}>Welcome to Homelyn</Text>
@@ -26,7 +32,7 @@ const LoginScreen = ({navigation}) => {
     <View>
     {/** Form input starts*/}
 
-<Text style={{fontWeight:"350", fontSize:23, marginTop:70, marginLeft:20}}>Phone Number</Text>
+<Text style={{fontWeight:"350", fontSize:23, marginTop:30, marginLeft:20}}>Phone Number</Text>
     <TextInput 
 
         placeholder="Enter your number"
@@ -62,8 +68,8 @@ const LoginScreen = ({navigation}) => {
         <Text style={{color:"blue", fontWeight:"bold"}}>Forgot Password?</Text>
       </View>
     </View>
-      <View style={{marginTop:200, marginRight:20}}>
-      {/**Button Section */}
+      <View style={{marginTop:145, marginRight:20}}>
+      {/**Login Section Starts*/}
       <TouchableOpacity 
       onPress={() => navigation.navigate("Verification")}
         style={{
@@ -80,11 +86,12 @@ const LoginScreen = ({navigation}) => {
       >
         <Text style={{ color: "white", fontWeight: "bold" }}>Login</Text>
       </TouchableOpacity>
+      {/**Login Section Ends*/}
       </View>
       <View style={{marginTop:70, marginRight:20}}>
       {/**Button Section */}
       <TouchableOpacity 
-      onPress={() => navigation.navigate("Verification")}
+     
         style={{
           position: "absolute",
           bottom: 60,
@@ -108,19 +115,45 @@ const LoginScreen = ({navigation}) => {
           position: "absolute",
           bottom: 60,
           width: "50%",
-          justifyContent: "center",
+          justifyContent: "left",
           alignItems: "center",
           backgroundColor: "#fff",
           padding: 4,
           borderRadius: 60,
-        
+        flexDirection: "row",
+        height: 60,
         }}
       >
-      <AntDesign name="google" size={24} color="black" style={{ marginRight: 100 }}/>
-        <Text style={{ color: "black", fontWeight: "bold", marginBottom:10, fontSize:16 }}>Google</Text>
+      <AntDesign name="google" size={25} color="black" style={{ marginRight: 40}}/>
+        <Text style={{ color: "black", fontWeight: "bold", fontSize:18 , marginRight:8}}>Google</Text>
       </TouchableOpacity>
       </View>
+      <View style={{marginTop:30, marginLeft:200}}>
+      {/**Button Section */}
+      <TouchableOpacity 
+     
+        style={{
+          position: "absolute",
+          bottom: 90,
+          width: "80%",
+          justifyContent: "flex-end",
+          alignItems: "center",
+          backgroundColor: "blue",
+          padding: 10,
+          borderRadius: 70,
+        flexDirection: "row",
+        height: 60,
+        }}
+      >
+     
+      <AntDesign name="facebook-square" size={25} color="white"   style={{ marginLeft: 40}}/>
       
+        <Text style={{ color: "#fff", fontWeight: "bold", fontSize:18 , marginLeft:20}}>FaceBook</Text>
+      </TouchableOpacity>
+      </View>
+      <View style={{alignItems:"center"}}>
+        <Text style={{marginBottom:60, fontSize:17, fontWeight:"bold"}}>Don't have an account? <TouchableOpacity onPress={() => navigation.navigate("Welcome")}><Text style={{color:"blue"}}> Register</Text></TouchableOpacity></Text>
+      </View>
     </View>
   )
 }
