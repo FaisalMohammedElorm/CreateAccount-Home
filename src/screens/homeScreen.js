@@ -30,7 +30,7 @@ const homeScreen = () => {
         </TouchableOpacity>
       </View>
       <View >
-        <Text className="text-xm text-[#A7AEC1] pb-2">Hello, Rita! 👋</Text>
+        <Text className="text-xm text-[#A7AEC1] pb-2">Hello, Miriana! 👋</Text>
         <Text className="text-3xl font-semibold">Let’s find best hotel</Text>
       </View>
       <View className="flex-row items-center border-none  bg-gray-100  rounded-full pl-5" style={{padding:wp("3px")}}>
