@@ -89,7 +89,7 @@ const LoginScreen = ({navigation}) => {
       {/**Login Section Ends*/}
       </View>
       <View style={{marginTop:70, marginRight:20}}>
-      {/**Button Section */}
+      {/**Or log in with Section */}
       <TouchableOpacity 
      
         style={{
@@ -108,9 +108,9 @@ const LoginScreen = ({navigation}) => {
       </TouchableOpacity>
       </View>
       <View style={{marginTop:80, marginRight:20}}>
-      {/**Button Section */}
+      {/**Google Section */}
       <TouchableOpacity 
-      onPress={() => navigation.navigate("Verification")}
+      
         style={{
           position: "absolute",
           bottom: 60,
@@ -129,7 +129,7 @@ const LoginScreen = ({navigation}) => {
       </TouchableOpacity>
       </View>
       <View style={{marginTop:30, marginLeft:200}}>
-      {/**Button Section */}
+      {/**FaceBook Section */}
       <TouchableOpacity 
      
         style={{
@@ -151,6 +151,7 @@ const LoginScreen = ({navigation}) => {
         <Text style={{ color: "#fff", fontWeight: "bold", fontSize:18 , marginLeft:20}}>FaceBook</Text>
       </TouchableOpacity>
       </View>
+      {/** Register Section */}
       <View style={{alignItems:"center"}}>
         <Text style={{marginBottom:60, fontSize:17, fontWeight:"bold"}}>Don't have an account? <TouchableOpacity onPress={() => navigation.navigate("Welcome")}><Text style={{color:"blue"}}> Register</Text></TouchableOpacity></Text>
       </View>
