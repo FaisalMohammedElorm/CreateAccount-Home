@@ -65,7 +65,8 @@ const LoginScreen = ({navigation}) => {
     <View>
       {/** Forgot Password*/}
       <View style={{flexDirection:"row", justifyContent:"space-between", marginLeft:250}}>
-        <Text style={{color:"blue", fontWeight:"bold"}}>Forgot Password?</Text>
+      <TouchableOpacity onPress={() => navigation.navigate("Forgot Password")}><Text style={{color:"blue", fontWeight:"bold"}}>Forgot Password?</Text></TouchableOpacity>
+        
       </View>
     </View>
       <View style={{marginTop:145, marginRight:20}}>
