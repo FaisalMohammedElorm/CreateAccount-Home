@@ -13,7 +13,7 @@ const notificationScreen = () => {
     <SafeAreaView style={{marginHorizontal:wp("5px")}}>
       <ScrollView className="space-y-10" >
         {/*notification header* */}
-        <View className="flex flex-row items-center justify-between" style={{marginTop:wp("6px"), marginBottom:wp("8px")}}>
+        <View className="flex flex-1 flex-row items-center justify-between" style={{marginTop:wp("6px"), marginBottom:wp("8px")}}>
           <TouchableOpacity>
             <AntDesign name="arrowleft" size={wp("7px")} color="black" />
           </TouchableOpacity>

@@ -1,6 +1,6 @@
 import { View, Text, SafeAreaView, TouchableOpacity, TextInput, FlatList, Image } from 'react-native'
 import React from 'react'
-import { MaterialIcons, AntDesign, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialIcons, AntDesign, Ionicons, MaterialCommunityIcons,FontAwesome6 } from '@expo/vector-icons';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -82,7 +82,7 @@ const homeScreen = ({navigation}) => {
                     <Text className="p-2">{item.wifi}</Text>
                   </View>
                   <View className="flex-row items-center">
-                    <MaterialIcons name="sports-gymnastics" size={wp("4px")} color={"#3F6DF6"} />
+                    <FontAwesome6 name="dumbbell" size={wp("4px")} color={"#3F6DF6"} />
                     <Text className="p-2">{item.gym}</Text>
                   </View>
                 </View>
