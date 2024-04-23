@@ -5,7 +5,7 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 import { AntDesign, Ionicons } from '@expo/vector-icons';
-import notificationmockData from './src/mockData/notificationmockData';
+
 
 
 const notificationScreen = () => {

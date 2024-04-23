@@ -5,13 +5,16 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
-import recommendedMockData from './src/mockData/recommendedmockData';
-import nearbymockData from './src/mockData/nearbymockData';
+import recommendedMockData from '../mockData/recommendedmockData';
+import nearbymockData from '../mockData/nearbymockData';
+
+{/**import { useNavigation } from "@react-navigation/native"; */}
 
 
 
 
-const homeScreen = () => {
+const homeScreen = ({navigation}) => {
+    {/**const navigation = useNavigation(); */}
   return (
     <SafeAreaView className="flex-1 " style={{ marginHorizontal: wp("5px"), gap: wp("10px")}}>
 
@@ -21,7 +24,7 @@ const homeScreen = () => {
           <Text> Purwokerto, IND</Text>
           <AntDesign name="down" size={wp("3px")} color={"#3F6DF6"} />
         </View>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('notification')}>
           <View className="relative right-3.5">
             <Ionicons name="notifications-outline" size={wp("6px")} color="black"  />
           </View>
@@ -61,7 +64,7 @@ const homeScreen = () => {
                   </View>
                   <View className="absolute bg-[#151B33] right-3.5 rounded-lg p-1 top-1">
                     <Text className="text-white">
-                      {item.cost}
+                    {item.cost}
                     </Text>
                   </View>
                 </View>

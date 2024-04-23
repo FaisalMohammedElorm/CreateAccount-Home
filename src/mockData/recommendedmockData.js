@@ -1,7 +1,7 @@
 const recommendedMockData = [
     {
         id: 0,
-        image: require("../../assets/images/recommedImage1.png"),
+        image:  require("../../assets/images/recommedImage1.png"),
         cost:"$45/Night",
         hotelName: "Diamond Heart Hotel",
         location: "Purwokerto, Street No 31, Central Java",
