@@ -5,12 +5,13 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 import { AntDesign, Ionicons } from '@expo/vector-icons';
+import notificationmockData from '../mockData/notificationmockData';
 
 
 
-const notificationScreen = () => {
+const NotificationScreen = () => {
   return (
-    <SafeAreaView style={{marginHorizontal:wp("5px")}}>
+    <SafeAreaView  className="flex-1" style={{marginHorizontal:wp("5px")}}>
       <ScrollView className="space-y-10" >
         {/*notification header* */}
         <View className="flex flex-1 flex-row items-center justify-between" style={{marginTop:wp("6px"), marginBottom:wp("8px")}}>
@@ -74,4 +75,4 @@ const notificationScreen = () => {
   )
 }
 
-export default notificationScreen
+export default NotificationScreen

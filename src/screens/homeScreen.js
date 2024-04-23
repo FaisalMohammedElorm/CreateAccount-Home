@@ -7,14 +7,16 @@ import {
 } from "react-native-responsive-screen";
 import recommendedMockData from '../mockData/recommendedmockData';
 import nearbymockData from '../mockData/nearbymockData';
+import { useNavigation } from '@react-navigation/native';
 
 {/**import { useNavigation } from "@react-navigation/native"; */}
 
 
 
 
-const homeScreen = ({navigation}) => {
-    {/**const navigation = useNavigation(); */}
+const HomeScreen = () => {
+    const navigation = useNavigation(); 
+
   return (
     <SafeAreaView className="flex-1 " style={{ marginHorizontal: wp("5px"), gap: wp("10px")}}>
 
@@ -136,4 +138,4 @@ const homeScreen = ({navigation}) => {
   )
 }
 
-export default homeScreen
+export default HomeScreen

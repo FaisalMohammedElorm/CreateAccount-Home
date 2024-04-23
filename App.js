@@ -1,8 +1,8 @@
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import homeScreen from "./src/screens/homeScreen";
-import notificationScreen from "./src/screens/notificationScreen";
+import HomeScreen from './src/screens/HomeScreen';
+import NotificationScreen from './src/screens/NotificationScreen';
 
 
 
@@ -19,12 +19,12 @@ const App = () => {
         <Stack.Screen
           options={{ headerShown: false }}
           name="Home"
-          component={homeScreen}
+          component={HomeScreen}
         />
         <Stack.Screen
           options={{headerShown: false}}
           name="notification"
-          component={notificationScreen}
+          component={NotificationScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
