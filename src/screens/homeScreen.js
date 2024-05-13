@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, TouchableOpacity, TextInput, FlatList, Image } from 'react-native'
+import { View, Text, SafeAreaView, TouchableOpacity, TextInput, FlatList, Image, Touchable } from 'react-native'
 import React from 'react'
 import { MaterialIcons, AntDesign, Ionicons, MaterialCommunityIcons,FontAwesome6 } from '@expo/vector-icons';
 import {
@@ -59,7 +59,7 @@ const HomeScreen = () => {
             data={recommendedMockData}
             keyExtractor={(item) => item.id.toString()}
             renderItem={({item}) => (
-              <View className="border-none rounded-md bg-gray-100">
+              <TouchableOpacity className="border-none rounded-md bg-gray-100">
                 <View >
                   <View className="relative ">
                     <Image source={item.image}/>
@@ -88,7 +88,7 @@ const HomeScreen = () => {
                     <Text className="p-2">{item.gym}</Text>
                   </View>
                 </View>
-              </View>
+              </TouchableOpacity>
             )}
             contentContainerStyle={{columnGap: wp("5px")}}
             horizontal
